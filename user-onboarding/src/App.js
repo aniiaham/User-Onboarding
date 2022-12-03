@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import UserForm from "./Form";
 import axios from "axios";
+import './Form.css'
 
 const InitialValues = {
   firstName: "",
@@ -75,6 +76,6 @@ const { users } = props;
 console.log(props)
 
 return (
-  <div>{JSON.stringify(users)}</div>
+  <div className="info-card">{JSON.stringify(users)}</div>
 )
 }
